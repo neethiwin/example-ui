@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: example-ui
 spec:
+  selector:
   replicas: 1
   template:
     metadata:
