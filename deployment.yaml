@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: example-ui
 spec:
+  selector:
+    matchLabels:
+      app: example-ui
   replicas: 1
   template:
     metadata:
